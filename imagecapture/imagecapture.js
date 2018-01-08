@@ -39,7 +39,6 @@ module.exports = function(RED) {
 	        			        node.error(m,msg);
 		        			  } else {
 		        				node.status({fill:"yellow",shape:"dot",text:'image capturing'});
-		        			    console.log(node.configfile);
 		                    	var array = [];
 		                    	child = spawn('fswebcam', ["-c",node.configfile,"-",""]);
 	
